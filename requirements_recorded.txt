@@ -1,0 +1,4 @@
+# Current installed Windows inference versions; NOT a cross-platform tested lockfile.
+numpy==1.25.2
+SimpleITK==2.2.1
+torch==2.0.1

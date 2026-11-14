@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+outputs/
+weights/
+*.pth
+*.pt
+*.zip
+PRIVATE/
+private_evidence/

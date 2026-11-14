@@ -1,0 +1,15 @@
+{
+  "capture_date": "2026-11-14",
+  "python": "3.9.17 (main, Jul  5 2023, 20:47:11) [MSC v.1916 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "packages": {
+    "torch": "2.0.1",
+    "numpy": "1.25.2",
+    "SimpleITK": "2.2.1",
+    "scipy": "1.11.2",
+    "matplotlib": "3.5.1"
+  },
+  "cuda_build": "11.7",
+  "cuda_available": true,
+  "scope": "Actual installed Windows runtime, not historical/cross-platform install proof"
+}

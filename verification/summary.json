@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-14",
+  "scope": "One synthetic historical validation example, CDR fold1 only",
+  "execution_succeeded": true,
+  "device": "cpu",
+  "python": "3.9.17 (main, Jul  5 2023, 20:47:11) [MSC v.1916 64 bit (AMD64)]",
+  "torch": "2.0.1",
+  "cuda_build": "11.7",
+  "cuda_available": true,
+  "input_sha256": "d9e645814f035e56e6256a9a0273731c570dcd84e32e5e5bcbb3f95512abde48",
+  "weight_sha256": [
+    "b8d35d54de39fc962cc1ff8ea8bed4dc46746d470c35c38470bd32c0e0261a04",
+    "39ca30a97b3b93dc326411b1a93d52d20a61204376f5dea42abc7f6a72c2fde4"
+  ],
+  "outputs": [
+    {
+      "stage": 1,
+      "shape_zyx": [
+        128,
+        128,
+        128
+      ],
+      "finite": true,
+      "minimum": -0.038501184433698654,
+      "maximum": 43.198577880859375,
+      "sha256": "bbd51f06e15df21ee8991b1429a90a8d73ad6846f67d3328245d7f23670d4649",
+      "forward_readback_seconds": 4.8830894
+    },
+    {
+      "stage": 2,
+      "shape_zyx": [
+        128,
+        128,
+        128
+      ],
+      "finite": true,
+      "minimum": -0.3420773446559906,
+      "maximum": 159.70594787597656,
+      "sha256": "3e8913301f2c3c1c64f19fddb0cf1f241a99ef7464d08a9b3e71e141b6a7cf1c",
+      "forward_readback_seconds": 4.8638566999999995
+    }
+  ],
+  "comparison": [
+    {
+      "stage": 1,
+      "array_equal": true,
+      "RMSE": 0.0,
+      "max_absolute_difference": 0.0,
+      "differing_voxels": 0,
+      "archived_file_sha256": "bbd51f06e15df21ee8991b1429a90a8d73ad6846f67d3328245d7f23670d4649",
+      "current_file_sha256": "bbd51f06e15df21ee8991b1429a90a8d73ad6846f67d3328245d7f23670d4649"
+    },
+    {
+      "stage": 2,
+      "array_equal": true,
+      "RMSE": 0.0,
+      "max_absolute_difference": 0.0,
+      "differing_voxels": 0,
+      "archived_file_sha256": "3e8913301f2c3c1c64f19fddb0cf1f241a99ef7464d08a9b3e71e141b6a7cf1c",
+      "current_file_sha256": "3e8913301f2c3c1c64f19fddb0cf1f241a99ef7464d08a9b3e71e141b6a7cf1c"
+    }
+  ],
+  "archived_conditions": "Same input copied from prior verified example; same checkpoint hashes; prior README explicitly documents CPU5-thread portable command. Original prior backend flags not fully logged; report array differences without tuning.",
+  "not_claimed": [
+    "all5-fold execution",
+    "CUDA numerical agreement",
+    "training reproduction",
+    "cross-platform installation test",
+    "public release"
+  ]
+}

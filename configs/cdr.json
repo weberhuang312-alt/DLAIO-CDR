@@ -1,0 +1,7 @@
+{
+  "manifest": "../model_manifest.csv",
+  "torch_threads": 5,
+  "sitk_threads": 2,
+  "cudnn_allow_tf32": true,
+  "matmul_allow_tf32": false
+}
