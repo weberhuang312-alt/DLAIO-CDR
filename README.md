@@ -16,11 +16,11 @@ The verified Windows environment used Python 3.9.17, PyTorch 2.0.1 (CUDA 11.7 bu
 
 `model_manifest.csv` identifies the ten existing checkpoints (two stages for each of five folds), including SHA256 hashes and pairings. Checkpoint binaries are not included in this code repository. The entry point requires access to those files under a user-specified weights directory; the manifest alone does not download them. Public checkpoint download locations have not yet been added.
 
-Expected layout under `WEIGHTS_ROOT`:
+Arrange the selected checkpoints under `WEIGHTS_ROOT` using the filenames below. Renaming a checkpoint file does not change its SHA256; the manifest verifies the file contents before inference.
 
 ```text
-08_selected_models/DLAIO-CDR/fold1/stage1/G_AB_399.pth
-08_selected_models/DLAIO-CDR/fold1/stage2/G_AB_399.pth
+08_selected_models/DLAIO-CDR/fold1/stage1/G_AB.pth
+08_selected_models/DLAIO-CDR/fold1/stage2/G_AB.pth
 # Equivalent stage1/stage2 directories for folds 2-5
 ```
 
