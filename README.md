@@ -14,7 +14,9 @@ The verified Windows environment used Python 3.9.17, PyTorch 2.0.1 (CUDA 11.7 bu
 
 ## Model checkpoints
 
-`model_manifest.csv` identifies the ten existing checkpoints (two stages for each of five folds), including SHA256 hashes and pairings. Checkpoint binaries are not included in this code repository. The entry point requires access to those files under a user-specified weights directory; the manifest alone does not download them. Public checkpoint download locations have not yet been added.
+Pretrained model weights are available from the [v1.0.0 release](https://github.com/weberhuang312-alt/DLAIO-CDR/releases/tag/v1.0.0). Each `DLAIO-CDR-foldN-weights.zip` contains the primary and secondary model for one fold. Download the fold(s) you need and extract the archives into a common directory. `SHA256SUMS.txt` in the release provides checksums for the ZIP files.
+
+`model_manifest.csv` identifies all ten checkpoints (two stages for each of five folds), including SHA256 hashes and pairings. The inference entry point checks both checkpoint hashes before running. Set `WEIGHTS_ROOT` to the directory containing the extracted `08_selected_models` directory.
 
 Arrange the selected checkpoints under `WEIGHTS_ROOT` using the filenames below. Renaming a checkpoint file does not change its SHA256; the manifest verifies the file contents before inference.
 
